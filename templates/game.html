@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %} Boggle! {% endblock %}
+
+{% block content %}
+    <div id="info-container">
+        <span id="games-played" class="game-info">{{ games_played }}</span>
+        <span id="games-played-label" class="game-info">Games Played</span>
+        <span id="info-divider" class="game-info">|</span>
+        <span id="high-score-label" class="game-info">High Score:</span>
+        <span id="high-score" class="game-info">{{ highscore }}</span>
+    </div>
+    <div id="score-time-container">
+        <span id="score">0</span>
+        <span id="score-label">pts</span>
+        <span id="timer">60.0</span>
+        <span id="timer-label">s</span>
+    </div>
+    <div id="board-container">
+        <table id="board">
+            <tbody id="board-body">
+                {% for row in board %}
+                {% set loopCount = loop.index %}
+                <tr id="row-{{ loopCount }}">
+                    {% for letter in row %}
+                    <td id="{{ loopCount }}-{{ loop.index }}" class="letter">{{ letter }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id="msg-container">
+        <span class="msg" id="msg"></span>
+    </div>
+    <div id="submit-guess">
+        <form action="/game" id="guess-form">
+            <input type="text" name="guess" id="guess-form-input">
+            <br>
+            <button type="submit" id="submit-btn" class="btn">Submit Guess</button>
+        </form>
+        <form action="/" id="new-game-form">
+            <button type="submit" id="new-game-btn" class="btn">New Game</button>
+        </form>
+    </div>
+
+{% endblock %}

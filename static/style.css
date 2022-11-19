@@ -1,0 +1,107 @@
+#home-div {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#board {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit-guess {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 5rem;
+}
+
+.game-info {
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+}
+
+#info-divider {
+    font-size: 1.5rem
+}
+
+#score-time-container {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2.5rem;
+}
+
+#msg-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#score-label {
+    margin-right: 2rem;
+}
+
+#timer {
+    margin-left: 2rem;
+}
+
+#start-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
+}
+
+#new-game-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#submit-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+#guess-form-input {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+#new-game-form {
+    display: inline;
+}
+
+#guess-form {
+    display: inline;
+}
+
+.correct {
+    font-size: 2rem;
+    color: #50C878;
+}
+
+.guessed {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.invalid {
+    font-size: 2rem;
+    color: #ff3333;
+}
+
